@@ -1,7 +1,17 @@
+
 body {
     background-color: #deeee1 !important;
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+main {
+    flex: 1; 
 }
 
 .navbar {
@@ -31,9 +41,20 @@ body {
 
 
 
+  footer {
+    text-align: center;
+    height: 5rem;
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; 
+}
 
 
-/* Footer */
+
+
 .f-info-links a {
     text-decoration: none;
     color: #222222;
@@ -77,8 +98,6 @@ body {
     
    
 }
-
-
 
 
 

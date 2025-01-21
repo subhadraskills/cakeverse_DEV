@@ -14,8 +14,8 @@ const flash = require("connect-flash");
 
 const Cake = require("./models/cakeSchema.js");
 const User = require("./models/user.js");
-const cakeRouter = require("./routes/cake.js");
 const userRouter = require("./routes/user.js");
+
 
 
 
@@ -25,31 +25,19 @@ const userRouter = require("./routes/user.js");
 const dbUrl = process.env.ATLASDB_URL;  
 
 
-// main()
-//     .then(() => {
-//         console.log("connected to DB");
-//     })
-//     .catch((err) => {
-//         console.log("Error connecting to DB: ", err);
-//     });
-
-
-//   async function main(){
-// await mongoose.connect(dbUrl);
-//   }
-
-
-async function main(){
-  try {
-    await mongoose.connect(dbUrl, {
-      serverSelectionTimeoutMS: 30000, // 30 seconds timeout for connection
+main()
+    .then(() => {
+        console.log("connected to DB");
+    })
+    .catch((err) => {
+        console.log("Error connecting to DB: ", err);
     });
-    console.log("Connected to DB");
-  } catch (err) {
-    console.log("Error connecting to DB: ", err.message);
+
+
+  async function main(){
+await mongoose.connect(dbUrl);
   }
-}
-main();
+
     
   
 // Set up EJS and view engine
@@ -92,13 +80,8 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use("/", cakeRouter);
-app.use("/", userRouter);
 
-// Root route
-app.get("/", (req, res) => {
-  res.send("Welcome to CakeVerse!");
-});
+app.use("/cakes", userRouter);
 
 
 
