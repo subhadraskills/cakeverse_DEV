@@ -72,11 +72,12 @@ store.on("error", () => {
 const sessionOptions = {
   secret: "process.env.SECRET",
   resave: false,
-  saveUninitialized: true,
+  saveUninitialized: false,
   cookie: {
+    httpOnly: true,
     expires: Date.now() + 1000 * 24 * 60 * 60 * 1000,
     maxAge: 7 * 24 * 60 * 60 * 1000,
-    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
   },
 };
 app.use(session(sessionOptions));
