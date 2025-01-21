@@ -1,0 +1,131 @@
+body {
+    background-color: #deeee1 !important;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 5.3rem;
+     background-color: rgb(67, 143, 73); 
+}
+.nav-link {
+    color: #222222 !important;
+}
+
+.navbar .fa-cake-candles {
+    margin-right: 100px; 
+    margin-left: 10px; 
+    font-size: 2rem; 
+    width:4rem;
+    height:4rem;
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #f5f5f5; 
+    color: black; 
+  }
+
+
+
+
+
+
+
+
+/* Footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+
+.f-info-links
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+   
+}
+
+
+.f-info-socials i {
+    font-size: 1.5rem;
+    margin-right: 1.2rem;
+}
+
+.f-info {
+    text-align: center;
+    height: 5rem;
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+.card {
+    /* border: none !important; */
+    border-radius: 2rem !important;
+    
+   
+}
+
+
+
+
+
+
+
+.card-img-top {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+
+
+
+.card-body {
+    padding: 0 !important;            
+    text-align: left;
+   
+}
+.card-text p {
+    font-weight: 400;
+    
+}
+
+.cake-link {
+    text-decoration: none;
+}
+
+
+
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+.heart-icon {
+    color: black;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+

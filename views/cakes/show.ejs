@@ -1,0 +1,18 @@
+<% layout("/layouts/boilerplate") %>
+
+    <h3>Cake Details :</h3>
+    <ul>
+        <li><%= cake.name %> </li>
+        <li>&#8377; <%= cake.price.toLocaleString("en-IN") %> </li>
+        <li><%= cake.description %></li>
+        <li><%= cake.brand %></li>
+        
+    </ul>
+    <br />
+    <a href="/cakes/<%= cake._id %>/edit">Edit the Cake</a>
+    <br/><br/>
+    <form method="POST" action="/cakes/<%= cake._id %>?_method=DELETE">
+        <button>Delete this cake</button>
+    </form>
+    
+

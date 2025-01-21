@@ -1,0 +1,43 @@
+<% layout("/layouts/boilerplate") %> 
+<body>
+    <h3>All Cakes</h3>
+    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4 ">
+       
+        <% for(let cake of allcakes) { %>
+            <a href="/cakes/<%=cake._id %>" class="cake-link">
+            <div class="col mx-2 my-3">
+                
+                <div class="card h-100" style="width: 20rem;">
+                    <img src="<%= cake.image %>"
+                     class="card-img-top" 
+                     alt="cake_image"
+                     style="height: 20rem; object-fit: cover;"
+                     
+                    />
+                    <div class="card-img-overlay">
+                    <i class="heart-icon">&hearts;</i>
+                    </div>
+                    <div class="card-body"
+                    style="height: 7rem;">
+                        
+                       
+                        <p class="card-text">
+                           <b> <%= cake.name %> </b> <br />
+                            &#8377; <%= cake.price.toLocaleString("en-IN") %> 
+                        </p>
+                       
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        <% } %>
+
+        
+
+    </div>
+</body>
+
+   
+
+   

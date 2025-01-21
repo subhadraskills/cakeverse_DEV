@@ -1,0 +1,103 @@
+const cakeData = [
+  {
+    name: "Chocolate Bliss",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSanC7u73Yb-w1ylcwAxuyz4Ky3m_wWSiqKg&s",
+    price: 450,
+    description: "A rich and moist chocolate cake topped with creamy chocolate ganache.",
+    brand: "Sweet Bites",
+  },
+  {
+    name: "Vanilla Delight",
+    image: "https://merakcakes.com/cdn/shop/files/VanillaChocoChipsCake-3.jpg?v=1713853700",
+    price: 400,
+    description: "A light and fluffy vanilla cake with a smooth buttercream frosting.",
+    brand: "Cakeland",
+  },
+  {
+    name: "Red Velvet Dream",
+    image: "https://thedefineddish.com/wp-content/uploads/2023/01/Red-Velvet-Cake-3-scaled.jpg",
+    price: 500,
+    description: "A velvety red cake with a creamy cheese frosting, perfect for celebrations.",
+    brand: "Dessert Dreams",
+  },
+  {
+    name: "Black Forest Classic",
+    image: "https://www.alsothecrumbsplease.com/wp-content/uploads/2019/07/Black-Forest-Cake-11-1.jpg", 
+    price: 550,
+    description: "A classic Black Forest cake layered with chocolate sponge, cherries, and whipped cream.",
+    brand: "Sweet Treats",
+  },
+  {
+    name: "Fruit Fantasy",
+    image: "https://tarateaspoon.com/wp-content/uploads/2017/07/fruit-cakes-feature-500x375.jpeg",
+    price: 600,
+    description: "A delicious cake topped with a variety of fresh seasonal fruits.",
+    brand: "Fruitful Delights",
+  },
+  {
+    name: "Lemon Zest",
+    image: "https://gluttony.in/wp-content/uploads/2024/07/Mixed-Fruit.png",
+    price: 420,
+    description: "A tangy lemon cake with a hint of zest, topped with lemon glaze.",
+    brand: "Zesty Bakes",
+  },
+  {
+    name: "Caramel Crunch",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlieFwKLwkKW-pJO4_mf-8eWNhiEhCxYryHgaZ97-1y4aWryAKZtJ3MS1oJclgtiUM_3Y&usqp=CAU",
+    price: 480,
+    description: "A sweet caramel-flavored cake layered with caramel frosting and crunchy toffee bits.",
+    brand: "Crunchy Treats",
+  },
+  {
+    name: "Coffee Bliss",
+    image: "https://thepinkberry.in/cdn/shop/products/DSC08613.jpg?v=1684766239&width=1946",
+    price: 470,
+    description: "A moist coffee cake with a hint of espresso, topped with crumbly streusel.",
+    brand: "Morning Delights",
+  },
+  {
+    name: "Pineapple Paradise",
+    image: "https://www.foodandwine.com/thmb/H9NS3GaVp-2XHt6wbPtrhwh0bws=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Black-Forest-Cake-FT-RECIPE0623-29bb291902e845bab17a7fc1d65e4ebb.jpg",
+    price: 430,
+    description: "A refreshing pineapple cake with juicy chunks and a tropical twist.",
+    brand: "Tropical Treats",
+  },
+  {
+    name: "Strawberry Heaven",
+    image: "https://hotcakesbakes.com/cdn/shop/files/StrawShortcake2.jpg?v=1708295814&width=533",
+    price: 520,
+    description: "A soft sponge cake layered with fresh strawberries and whipped cream.",
+    brand: "Berry Good Bakes",
+  },
+  {
+    name: "Cookies and Cream",
+    image: "https://www.flavourtownbakery.co.uk/cdn/shop/files/Vanilla-Birthday-Cake-Flavourtown-Bakery_1200x1200.jpg?v=1699965610",
+    price: 490,
+    description: "A chocolate cake layered with crushed cookies and cream frosting.",
+    brand: "Cookie Bliss",
+  },
+  {
+    name: "Rainbow Fantasy",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN08suxLJYbSBZBBKKFI9ymM3-Sad3t2ot6_5E6aW2lqzueTEckaThvjdjXGjekvONZwM&usqp=CAU",
+    price: 650,
+    description: "A vibrant rainbow-colored cake with layers of fruity flavors and vanilla frosting.",
+    brand: "Colorful Bites",
+  },
+  {
+    name: "Nutty Hazelnut",
+    image: "https://recipesblob.oetker.co.uk/assets/46b664a502ce4ebdb241e6667ce789b7/1272x764/pinata-rainbow-cake.webp",
+    price: 540,
+    description: "A delightful hazelnut cake topped with creamy hazelnut frosting and roasted nuts.",
+    brand: "Nutty Treats",
+  },
+  {
+    name: "Mint Choco Fusion",
+    image: "https://www.alsothecrumbsplease.com/wp-content/uploads/2019/07/Black-Forest-Cake-18.jpg",
+    price: 500,
+    description: "A chocolate cake infused with refreshing mint flavor and choco-chip toppings.",
+    brand: "Cool Cravings",
+  },
+];
+
+module.exports = cakeData;
+

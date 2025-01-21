@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cakeverse</title>
+</head>
+<body>
+    <h3>Edit your Cake</h3>
+    
+    <form method="POST" action="/cakes/<%= cake._id %>?_method=PUT">
+        <input name="cake[name]" value="<%= cake.name %>" type="text" />
+        <br/><br/>
+        <input name="cake[image]"  value="<%= cake.image %>"  type="text" />
+        <br/><br/>
+        <input name="cake[price]" value="<%= cake.price %>" type="number"  />
+        <br/><br/>
+        <textarea name="cake[description]"><%= cake.description %></textarea>
+        <br/><br/>
+        <input name="cake[brand]" value="<%= cake.brand %>" type="text" />
+        <br/><br/>
+        <button type="submit">Add</button>
+    </form>
+
+
+</body>
+</html>
