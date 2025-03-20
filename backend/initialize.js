@@ -1,6 +1,6 @@
 const mongoose = require("mongoose"); 
-const  data=require("./data.js");
-const cakeSchema= require("../models/cakeSchema.js");
+const  initData=require("./data.js");
+const Cake= require("../models/cake.js");
 
 
 
@@ -22,18 +22,18 @@ async function main() {
 }
 
 
-const initData = async () => {
-    try {
-      await cakeSchema.deleteMany({}); // Delete all existing cakes
-      await cakeSchema.insertMany(data); // Insert new cakes from data.js
-      console.log("Data was initialized successfully!");
-    } catch (err) {
-      console.error("Error initializing data:", err);
-    }
+const initDB = async () => {
+    
+  await Cake.deleteMany({});
+  initData.data= initData.data.map((obj) => ({
+      ...obj,owner: "6751e5d4e2376f7df2621f42"
+  }));
+  await Cake.insertMany(initData.data);
+  console.log("Data was initialized");
   };
   
 
 
 
 
-initData();
+initDB();

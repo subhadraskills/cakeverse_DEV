@@ -139,27 +139,23 @@
 
 
 
-      <!-- Right-aligned Add Cake Button -->
-      <a class="nav-link ms-auto" href="/cakes/new">
-        <button class="add-cake-btn">Add new Cake</button>
-        <% if(!currUser) { %> 
-          <a class="nav-link ms-auto" href="/signup">
-            <button class="signup-btn">SignUp</button>  
-          <a class="nav-link ms-auto" href="/login">
-            <button class="login-btn">login</button>  
-          <% } %>
-          <% if(currUser) { %>    
-          <a class="nav-link ms-auto" href="/logout">
-            <button class="logout-btn">logout</button>       
-          <%}%>  
-                 
-          
-      
-    </div>
-  </a>
+ <!-- Right-aligned Add Cake Button -->
+<a class="nav-link ms-auto" href="/cakes/new">
+  <button class="add-cake-btn">Add new Cake</button>
 </a>
-  </a>
-</a> 
+
+
+<% if(!currUser) { %> 
+  <a class="nav-link " href="/signup">
+    <button class="signup-btn">SignUp</button></a>  
+  <a class="nav-link" href="/login">
+    <button class="login-btn">login</button></a>  
+  <% } %>
+  <% if(currUser) { %>    
+  <a class="nav-link" href="/logout">
+    <button class="logout-btn">logout</button></a>       
+  <%}%> 
+  
   
   <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;
       <i class="fa-solid fa-bell"></i>&nbsp;&nbsp;&nbsp;

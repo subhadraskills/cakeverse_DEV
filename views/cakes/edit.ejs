@@ -1,27 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cakeverse</title>
-</head>
-<body>
+<% layout("/layouts/boilerplate") %>
+
+
+<div class="row mt-3">
+  <div class="col-8 offset-2">
     <h3>Edit your Cake</h3>
+    <form
+  method="POST" 
+  action="/cakes/<%= cake._id %>?_method=PUT" 
+  novalidate 
+  class="needs-validation"
+  enctype="multipart/form-data"
+>  
     
-    <form method="POST" action="/cakes/<%= cake._id %>?_method=PUT">
-        <input name="cake[name]" value="<%= cake.name %>" type="text" />
-        <br/><br/>
-        <input name="cake[image]"  value="<%= cake.image %>"  type="text" />
-        <br/><br/>
-        <input name="cake[price]" value="<%= cake.price %>" type="number"  />
-        <br/><br/>
-        <textarea name="cake[description]"><%= cake.description %></textarea>
-        <br/><br/>
-        <input name="cake[brand]" value="<%= cake.brand %>" type="text" />
-        <br/><br/>
-        <button type="submit">Add</button>
+     
+      
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input
+ name="cake[name]" 
+ value="<%= cake.name %>"
+ type="text" 
+ class="form-control"
+ required 
+/>
+        <div class="valid-feedback">Title looks good!</div>
+      </div>
+
+      
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="cake[description]" class="form-control" required><%=cake.description %></textarea>
+        <div class="valid-feedback">Please enter a short description</div>
+      </div>
+
+
+
+      <div class="mb-3">
+        Original Cake Image <br />
+        <img src="<%=  originalImageUrl%>" />
+      </div>
+
+
+      <div class="mb-3">
+        <label for="image" class="form-label">Upload New Image </label>
+        <input 
+        name="cake[image]" 
+        type="file" 
+        class="form-control"
+         />
+
+      </div>
+
+
+      <div class="row">
+        <div class="mb-3 col-md-4">
+          <label for="price" class="form-label">Price</label>
+          <input name="cake[price]" value="<%= cake.price %>" type="number" class="form-control" required />
+          <div class="invalid-feedback">Price should be valid</div>
+        </div>
+
+       
+        <div class="mb-3 col-md-8">
+          <label for="country" class="form-label">Country</label>
+          <input name="cake[country]" value="<%=cake.country %>" type="text" class="form-control" required />
+          <div class="invalid-feedback">Country name should be valid</div>
+        </div>
+      </div>
+
+      
+
+      <button class="btn btn-dark edit-btn mt-3">Edit</button>
     </form>
+  </div>
+</div>
 
 
-</body>
-</html>
+
