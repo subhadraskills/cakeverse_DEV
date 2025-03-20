@@ -142,6 +142,7 @@ app.use((err, req, res, next) => {
 
 
 //start the server
-app.listen(8080, ()=>{
-    console.log("server is listing to port 8080")
+app.listen(5000, ()=>{
+    console.log("server is listing to port 5000"
+      );
 });
