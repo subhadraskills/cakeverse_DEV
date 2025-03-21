@@ -1,7 +1,7 @@
 <%- layout("/layouts/boilerplate") %> 
 <body>
     <h3>All Cakes</h3>
-    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4 ">
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4 ">
        
         <% for(let cake of allCakes) { %>
             <a href="/cakes/<%=cake._id %>" class="cake-link">
@@ -38,6 +38,5 @@
     </div>
 </body>
 
-   
 
    
