@@ -91,6 +91,15 @@ main {
 }
 
 
+  
+body {
+    margin-bottom: 120px; 
+  }
+  
+  .container, .row {
+    margin-bottom: 80px; 
+  
+  }
 
 
 
