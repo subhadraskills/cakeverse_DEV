@@ -41,16 +41,7 @@ main {
 
 
 
-  footer {
-    text-align: center;
-    height: 5rem;
-    background-color: beige;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto; 
-}
+
 
 
 
@@ -91,9 +82,9 @@ main {
     align-items: space-evenly;
 }
 
-/* Cards */
+
 .card {
-    /* border: none !important; */
+    
     border-radius: 2rem !important;
     
    
